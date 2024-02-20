@@ -6,7 +6,9 @@ public class DispositivoEntrada {
 	private String marca;
 
 	//metodos
+	public DispositivoEntrada(){};
 	public DispositivoEntrada(String tipoEntrada, String marca) {
+	this();	
 		this.tipoEntrada = tipoEntrada;
 		this.marca = marca;
 	}

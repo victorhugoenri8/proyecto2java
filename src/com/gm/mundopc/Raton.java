@@ -7,8 +7,6 @@ public class Raton extends DispositivoEntrada {
 
 	//metodos
 	public Raton(int idRaton, int contadorRatones) {
-		//super(tipoEntrada, marca);
-		//this();
 		this.idRaton = idRaton;
 		this.contadorRatones = contadorRatones;
 	}
