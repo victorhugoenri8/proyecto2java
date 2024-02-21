@@ -8,16 +8,18 @@ public class Monitor {
 	private int contadosMonitores;
 
 	//metodos
-	private Monitor() {
-
+	private Monitor(){
 	}
 
 	public Monitor(int idMonitor, String marca, double tamano, int contadosMonitores) {
+		this();
 		this.idMonitor = idMonitor;
 		this.marca = marca;
 		this.tamano = tamano;
 		this.contadosMonitores = contadosMonitores;
 	}
+
+	
 
 	public int getIdMonitor() {
 		return idMonitor;
