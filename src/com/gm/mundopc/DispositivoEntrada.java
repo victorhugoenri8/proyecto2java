@@ -6,9 +6,9 @@ public class DispositivoEntrada {
 	private String marca;
 
 	//metodos
-	public DispositivoEntrada(){};
+//	public DispositivoEntrada(){};
 	public DispositivoEntrada(String tipoEntrada, String marca) {
-	this();	
+//	this();	
 		this.tipoEntrada = tipoEntrada;
 		this.marca = marca;
 	}
@@ -22,7 +22,7 @@ public class DispositivoEntrada {
 	}
 
 	public String getMarca() {
-		return marca;
+		return this.marca;
 	}
 
 	public void setMarca(String marca) {
