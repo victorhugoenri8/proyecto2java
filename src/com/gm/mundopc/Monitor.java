@@ -2,32 +2,31 @@ package com.gm.mundopc;
 
 public class Monitor {
 
-	private int idMonitor;
+	private final int idMonitor;
 	private String marca;
 	private double tamano;
-	private int contadosMonitores;
+	private static int contadosMonitores;
 
 	//metodos
 	private Monitor(){
+		this.idMonitor = ++Monitor.contadosMonitores;
 	}
 
-	public Monitor(int idMonitor, String marca, double tamano, int contadosMonitores) {
+	public Monitor(String marca, double tamano) {
 		this();
-		this.idMonitor = idMonitor;
+//		this.idMonitor = idMonitor;
 		this.marca = marca;
 		this.tamano = tamano;
-		this.contadosMonitores = contadosMonitores;
+//		this.contadosMonitores = contadosMonitores;
 	}
-
-	
 
 	public int getIdMonitor() {
-		return idMonitor;
+		return this.idMonitor;
 	}
 
-	public void setIdMonitor(int idMonitor) {
-		this.idMonitor = idMonitor;
-	}
+//	public void setIdMonitor(int idMonitor) {
+//		this.idMonitor = idMonitor;
+//	}
 
 	public String getMarca() {
 		return marca;
@@ -49,20 +48,26 @@ public class Monitor {
 		return contadosMonitores;
 	}
 
-	public void setContadosMonitores(int contadosMonitores) {
-		this.contadosMonitores = contadosMonitores;
-	}
+//	public void setContadosMonitores(int contadosMonitores) {
+//		this.contadosMonitores = contadosMonitores;
+//	}
+
+//	@Override
+//	public String toString() {
+//		StringBuilder sb = new StringBuilder();
+//		sb.append("Monitor{");
+//		sb.append("idMonitor=").append(idMonitor);
+//		sb.append(", marca=").append(marca);
+//		sb.append(", tamano=").append(tamano);
+//		sb.append(", contadosMonitores=").append(contadosMonitores);
+//		sb.append('}');
+//		return sb.toString();
+//	}
 
 	@Override
 	public String toString() {
-		StringBuilder sb = new StringBuilder();
-		sb.append("Monitor{");
-		sb.append("idMonitor=").append(idMonitor);
-		sb.append(", marca=").append(marca);
-		sb.append(", tamano=").append(tamano);
-		sb.append(", contadosMonitores=").append(contadosMonitores);
-		sb.append('}');
-		return sb.toString();
+		return "Monitor{" + "idMonitor=" + idMonitor + ", marca=" + marca + ", tamano=" + tamano + '}';
 	}
-
+	
+	
 }
